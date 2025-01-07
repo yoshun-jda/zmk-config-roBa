@@ -34,6 +34,7 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <7 8>;
+            layers = <0>;
         };
 
         eisuu {
