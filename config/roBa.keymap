@@ -39,6 +39,7 @@
         eisuu {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         obsidian_bracket {
@@ -49,6 +50,7 @@
         kana {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <13 12>;
+            layers = <0>;
         };
     };
 
