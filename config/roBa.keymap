@@ -23,12 +23,7 @@
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <18 19>;
-        };
-
-        muhennkann {
-            bindings = <&bracket_to_obsidian INT_MUHENKAN>;
-            key-positions = <30 31>;
+            key-positions = <24 25>;
         };
 
         double_quotation {
@@ -41,14 +36,19 @@
             key-positions = <7 8>;
         };
 
-        kana {
-            bindings = <&kp INT_KANA>;
-            key-positions = <24 25>;
+        eisuu {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <18 19>;
         };
 
         obsidian_bracket {
             bindings = <&bracket_to_obsidian>;
-            key-positions = <12 13>;
+            key-positions = <24 25>;
+        };
+
+        kana {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <13 12>;
         };
     };
 
@@ -78,10 +78,10 @@
 
         default_layer {
             bindings = <
-&mt LG(SEMICOLON) TAB  &kp C        &kp U           &kp Y           &kp P                                               &kp V            &kp D            &kp H            &kp G        &kp J
-&mt LEFT_SHIFT A       &mt LCTRL O  &mt LEFT_GUI E  &mt LEFT_ALT I  &kp PERIOD   &kp LS(LG(SQT))      &kp MINUS         &kp K            &mt RIGHT_ALT T  &mt RIGHT_GUI N  &mt RCTRL S  &mt RIGHT_SHIFT R
-&kp Q                  &kp X        &kp COMMA       &kp Z           &kp SLASH    &kp COLON            &kp SEMICOLON     &kp F            &kp W            &kp M            &kp B        &kp L
-&kp LEFT_SHIFT         &kp LCTRL    &kp LEFT_ALT    &lt 5 LANG1     &lt 1 SPACE  &lt 2 ENTER          &lt 3 LANGUAGE_2  &lt 4 BACKSPACE                                                 &kp RCTRL
+&mt LG(SEMICOLON) TAB  &kp C        &kp U           &kp Y           &kp P                                            &kp V            &kp D            &kp H            &kp G        &kp J
+&mt LEFT_SHIFT A       &mt LCTRL O  &mt LEFT_GUI E  &mt LEFT_ALT I  &kp PERIOD   &kp LS(LG(SQT))      &kp MINUS      &kp K            &mt RIGHT_ALT T  &mt RIGHT_GUI N  &mt RCTRL S  &mt RIGHT_SHIFT R
+&kp Q                  &kp X        &kp COMMA       &kp Z           &kp SLASH    &kp COLON            &kp SEMICOLON  &kp F            &kp W            &kp M            &kp B        &kp L
+&kp LEFT_SHIFT         &kp LCTRL    &kp LEFT_ALT    &lt 5 TAB       &lt 1 SPACE  &lt 2 ENTER          &lt 3 ENTER    &lt 4 BACKSPACE                                                 &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
