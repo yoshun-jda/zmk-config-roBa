@@ -53,6 +53,11 @@
             key-positions = <13 12>;
             layers = <0>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
