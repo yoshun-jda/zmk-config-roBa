@@ -47,8 +47,8 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
     };
+};
 
-    &pointer {
-        acceleration-exponent = <1.5>;  
-    }    
+&pointer {
+    acceleration-exponent = <1.5>;  
 };
