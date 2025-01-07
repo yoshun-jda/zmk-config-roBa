@@ -49,7 +49,7 @@
     };
 
     pointer {
-        acceleration-exponent = <1.5>;  
+        acceleration-exponent = <2>;  
     };
 };
 
