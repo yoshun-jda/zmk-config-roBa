@@ -16,14 +16,14 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
+        esc {
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <24 25>;
+            key-positions = <6 7>;
         };
 
         double_quotation {
@@ -54,9 +54,9 @@
             layers = <0>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <20 21>;
+        bracket90 {
+            bindings = <&bracket90>;
+            key-positions = <30 31>;
         };
     };
 
@@ -64,9 +64,15 @@
         bracket_to_obsidian: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_press>, <&kp F &kp D>;
-
+            bindings = <&kp LEFT_BRACKET &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &kp LEFT_ARROW>;
             label = "TO_LAYER_0";
+        };
+
+        bracket90: bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "BRACKET";
         };
     };
 
@@ -97,10 +103,10 @@
 
         NUM_SIMBOL {
             bindings = <
-&kp TILDE                   &kp LS(KP_NUMBER_7)  &kp LS(KP_NUMBER_8)  &kp LS(KP_NUMBER_9)  &kp LS(KP_NUMBER_0)                                             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACE    &kp RIGHT_BRACE
-&kp GRAVE                   &kp LS(KP_NUMBER_4)  &kp LS(KP_NUMBER_5)  &kp LS(KP_NUMBER_6)  &kp LESS_THAN        &kp LC(LA(KP_NUMBER_0))      &kp QUESTION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&mt LEFT_SHIFT KP_NUMBER_0  &kp LS(KP_N1)        &kp LS(KP_NUMBER_2)  &kp LS(KP_NUMBER_3)  &kp GREATER_THAN     &kp EQUAL                    &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS          &kp PIPE
-&kp MINUS                   &trans               &trans               &trans               &trans               &trans                       &none         &none                                                       &kp BACKSLASH
+&kp TILDE                   &kp LS(KP_NUMBER_7)  &kp LS(KP_NUMBER_8)  &kp LS(KP_NUMBER_9)  &kp LS(KP_NUMBER_0)                                             &kp RIGHT_BRACE  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET
+&kp GRAVE                   &kp LS(KP_NUMBER_4)  &kp LS(KP_NUMBER_5)  &kp LS(KP_NUMBER_6)  &kp LESS_THAN        &kp LC(LA(KP_NUMBER_0))      &kp QUESTION  &kp LEFT_BRACE   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_BRACKET
+&mt LEFT_SHIFT KP_NUMBER_0  &kp LS(KP_N1)        &kp LS(KP_NUMBER_2)  &kp LS(KP_NUMBER_3)  &kp GREATER_THAN     &kp EQUAL                    &kp PLUS      &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PIPE
+&kp MINUS                   &trans               &trans               &trans               &trans               &trans                       &none         &none                                                      &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
