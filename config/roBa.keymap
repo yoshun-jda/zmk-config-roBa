@@ -125,10 +125,10 @@
 
         SHORTCUT {
             bindings = <
-&trans      &kp ESCAPE  &kp LS(LG(NUMBER_2))  &kp LG(LC(R))         &kp LS(LG(NUMBER_4))                                &none   &trans  &kp RG(N7)  &kp RG(N8)  &kp RG(N9)
-&trans      &trans      &kp LS(LESS_THAN)     &kp LS(GREATER_THAN)  &trans                &trans           &trans       &trans  &trans  &trans      &trans      &trans
-&trans      &trans      &trans                &trans                &trans                &bootloader      &bootloader  &trans  &trans  &trans      &trans      &bootloader
-&sys_reset  &trans      &trans                &trans                &trans                &trans           &trans       &trans                                  &bt BT_CLR_ALL
+&trans      &kp ESCAPE  &kp LS(LG(NUMBER_2))  &kp LG(LC(R))         &kp LS(LG(NUMBER_4))                                &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp RG(N7)  &kp RG(N8)  &kp RG(N9)
+&trans      &trans      &kp LS(LESS_THAN)     &kp LS(GREATER_THAN)  &trans                &trans           &trans       &trans           &trans             &trans      &trans      &trans
+&trans      &trans      &trans                &trans                &trans                &bootloader      &bootloader  &trans           &trans             &trans      &trans      &bootloader
+&sys_reset  &trans      &trans                &trans                &trans                &trans           &trans       &trans                                                      &bt BT_CLR_ALL
             >;
         };
 
