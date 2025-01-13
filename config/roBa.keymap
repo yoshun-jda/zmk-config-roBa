@@ -39,7 +39,7 @@
 
         eisuu {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <18 19>;
+            key-positions = <13 12>;
             layers = <0>;
         };
 
@@ -50,7 +50,7 @@
 
         kana {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <13 12>;
+            key-positions = <18 19>;
             layers = <0>;
         };
 
@@ -94,7 +94,7 @@
             bindings = <
 &mt LG(SEMICOLON) TAB  &kp C        &kp U           &kp Y           &kp P                                            &kp V            &kp D            &kp H            &kp G        &kp J
 &mt LEFT_SHIFT A       &mt LCTRL O  &mt LEFT_GUI E  &mt LEFT_ALT I  &kp PERIOD   &kp LS(LG(SQT))      &kp MINUS      &kp K            &mt RIGHT_ALT T  &mt RIGHT_GUI N  &mt RCTRL S  &mt RIGHT_SHIFT R
-&kp Q                  &kp X        &kp COMMA       &kp Z           &kp SLASH    &kp COLON            &kp SEMICOLON  &kp F            &kp W            &kp M            &kp B        &kp L
+&kp Q                  &kp X        &kp COMMA       &kp Z           &kp SLASH    &kp COLON            &kp SEMICOLON  &kp F            &kp W            &kp M            &lt 5 B      &kp L
 &kp LEFT_SHIFT         &kp LCTRL    &kp LEFT_ALT    &lt 5 TAB       &lt 1 SPACE  &lt 2 ENTER          &lt 3 ENTER    &lt 4 BACKSPACE                                                 &kp RCTRL
             >;
 
@@ -143,10 +143,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans    &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mkp MB1  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
