@@ -138,7 +138,7 @@
 &trans      &kp ESCAPE  &kp LS(LG(NUMBER_2))    &kp LG(LC(R))         &kp LS(LG(NUMBER_4))                                &kp K_VOLUME_UP  &kp K_VOLUME_DOWN       &kp RG(N7)               &kp RG(N8)  &kp RG(N9)
 &trans      &trans      &kp LS(LESS_THAN)       &kp LS(GREATER_THAN)  &trans                &trans           &trans       &trans           &kp RG(LEFT_BRACKET)    &kp RG(RIGHT_BRACKET)    &trans      &kp RG(RC(ENTER))
 &trans      &trans      &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT))     &trans                &bootloader      &bootloader  &trans           &kp RG(RS(LEFT_ARROW))  &kp RG(RS(RIGHT_ARROW))  &trans      &bootloader
-&sys_reset  &trans      &trans                  &trans                &trans                &trans           &trans       &trans                                                                        &bt BT_CLR_ALL
+&sys_reset  &trans      &kp LG(LA(ESCAPE))      &trans                &trans                &trans           &trans       &trans                                                                        &bt BT_CLR_ALL
             >;
         };
 
