@@ -105,7 +105,7 @@
 &mt Q TAB         &kp Y        &kp U           &kp COMMA       &kp MINUS                                            &kp P            &kp D            &kp H            &kp W        &kp F
 &mt LEFT_SHIFT A  &mt LCTRL I  &mt LEFT_GUI E  &mt LEFT_ALT O  &kp PERIOD   &kp LS(LG(SQT))      &kp EQUAL          &kp K            &mt RIGHT_ALT T  &mt RIGHT_GUI N  &mt RCTRL S  &mt RIGHT_SHIFT R
 &kp Z             &kp X        &kp C           &kp V           &kp SLASH    &kp COLON            &kp DOUBLE_QUOTES  &kp G            &kp M            &kp L            &lt 5 B      &kp J
-&kp QUESTION      &kp LCTRL    &kp LEFT_ALT    &lt 5 TAB       &lt 1 SPACE  &lt 2 ENTER          &lt 3 ENTER        &lt 4 BACKSPACE                                                 &kp SQT
+&kp QUESTION      &kp LCTRL    &to 6           &lt 5 TAB       &lt 1 SPACE  &lt 2 ENTER          &lt 3 ENTER        &lt 4 BACKSPACE                                                 &kp SQT
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -157,6 +157,15 @@
 &kp LEFT_SHIFT  &trans  &trans  &mkp MB1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1  &trans  &trans
 &trans          &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
 &trans          &trans  &trans  &trans    &trans  &trans      &trans  &trans                              &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&kp LG(TAB)  &trans  &trans     &trans     &trans                      &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &kp LG(C)  &kp LG(V)  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans     &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &to 0      &trans     &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
