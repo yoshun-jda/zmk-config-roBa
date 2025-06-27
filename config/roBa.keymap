@@ -162,10 +162,10 @@
 
         layer_6 {
             bindings = <
-&kp LG(TAB)  &trans     &kp LG(Z)  &kp LG(LS(Z))  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans       &kp LG(Z)  &kp LG(C)  &kp LG(V)      &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans     &trans     &trans         &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans     &to 0      &kp ENTER      &kp SPACE  &kp DEL      &trans  &trans                          &trans
+&kp LG(TAB)  &trans     &kp LG(Z)     &kp LG(LS(Z))  &trans                          &trans  &trans  &trans  &trans  &trans
+&trans       &kp LG(Z)  &kp LEFT_GUI  &none          &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans     &kp LC(C)     &kp LG(V)      &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans     &to 0         &kp ENTER      &kp SPACE  &kp DEL      &trans  &trans                          &trans
             >;
         };
     };
