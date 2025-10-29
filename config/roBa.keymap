@@ -16,8 +16,8 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESCAPE>;
+        obsidian_blacket_kana {
+            bindings = <&blacket_obsidian_kana>;
             key-positions = <2 3>;
         };
 
@@ -74,7 +74,7 @@
         bracket_to_obsidian: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &kp LEFT_ARROW>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &kp LEFT_ARROW>;
             label = "TO_LAYER_0";
         };
 
@@ -83,6 +83,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
             label = "BRACKET";
+        };
+
+        blacket_obsidian_kana: blacket_obsidian_kana {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &kp LEFT_ARROW &kp LANGUAGE_1>;
+            label = "BLACKET_OBSIDIAN_KANA";
         };
     };
 
