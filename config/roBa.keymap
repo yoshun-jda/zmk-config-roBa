@@ -173,7 +173,7 @@
 &kp LG(TAB)    &trans  &kp R         &bl BL_OFF  &trans                          &trans  &trans  &trans  &trans  &trans
 &kp LG(A)      &kp S   &kp LEFT_GUI  &kp LG(T)   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LG(Z)      &kp X   &kp LG(C)     &kp LG(V)   &kp M      &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LG(Z))  &trans  &to 0         &kp ENTER   &kp SPACE  &kp DEL      &trans  &trans                          &trans
+&kp LS(LG(Z))  &trans  &to 0         &kp ENTER   &kp SPACE  &kp DEL      &trans  &trans                          &mkp MB2
             >;
         };
     };
