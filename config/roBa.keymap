@@ -170,10 +170,10 @@
 
         layer_6 {
             bindings = <
-&kp LG(TAB)    &trans  &kp R         &bl BL_OFF  &trans                          &trans  &trans  &trans  &trans  &trans
-&kp LG(A)      &kp S   &kp LEFT_GUI  &kp LG(T)   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(Z)      &kp X   &kp LG(C)     &kp LG(V)   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LG(Z))  &trans  &to 0         &kp ENTER   &kp SPACE  &kp DEL      &trans  &trans                          &trans
+&kp LG(TAB)    &trans  &kp R         &bl BL_OFF  &trans                                &trans  &trans          &trans          &trans           &trans
+&kp LG(A)      &kp S   &kp LEFT_GUI  &kp LG(T)   &trans     &trans             &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans
+&kp LG(Z)      &kp X   &kp LG(C)     &kp LG(V)   &trans     &trans             &trans  &trans  &trans          &kp DOWN_ARROW  &trans           &trans
+&kp LS(LG(Z))  &trans  &to 0         &kp ENTER   &kp SPACE  &kp BACKSPACE      &trans  &trans                                                   &trans
             >;
         };
     };
